@@ -1,0 +1,19 @@
+.videoPage {
+  padding: 20px 100px;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.videoContentPage {
+  flex-direction: column;
+}
+
+.videoContentLeftPage,
+.videoContentRightPage {
+  flex: 12;
+}
+
+.videoContentLeftPage {
+  display: flex;
+}

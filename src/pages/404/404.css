@@ -1,0 +1,98 @@
+.error {
+   display: flex;
+   background-color: #f9f9f9f9;
+   padding: 100px;
+}
+
+.errorLeft,
+.errorRight {
+   flex: 6;
+   width: 100%;
+}
+
+.errorLeft>h2 {
+   margin: 0;
+   font-size: 80px;
+   font-weight: 400;
+}
+
+.errorLeft>span {
+   margin-top: 20px;
+   display: flex;
+   width: 80%;
+   font-size: 20px;
+}
+
+.errorButton{
+   height: 50px;
+   width: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #02a037;
+   border-radius: 50px;
+   margin-top: 40px;
+   color: #fff;
+}
+
+.errorRight {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.errorRight>img {
+   position: absolute;
+   top: 90px;
+   height: 550px
+}
+
+@media screen and (max-width: 479px) {
+   .error {
+      display: flex;
+      background-color: #f9f9f9f9;
+      padding: 20px 1px;
+      height: 65vh;
+   }
+
+   .errorLeft{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 20px;
+      width: 80%;
+      position: absolute;
+      z-index: 10;
+      top: 250px;
+   }
+
+   .errorLeft>h2 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 400;
+   }
+
+   .errorLeft>span {
+      margin-top: 5px;
+      width: 50%;
+      font-size: 14px;
+   }
+
+   .errorButton{
+      margin-top: 10px;
+      width: 100px;
+      height: 40px;
+   }
+
+   .errorRight{
+      justify-content: flex-end;
+   }
+
+   .errorRight>img {
+      position: relative;
+      top: 20px;
+      height:  100%;   
+      object-fit: cover;
+   }
+   
+}

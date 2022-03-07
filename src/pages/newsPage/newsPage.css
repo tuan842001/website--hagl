@@ -1,0 +1,6 @@
+.newsPage {
+  padding: 20px 100px;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}

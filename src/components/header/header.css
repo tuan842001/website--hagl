@@ -1,0 +1,17 @@
+.header{
+    top: 0;
+}
+
+.headerImg{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    opacity: 1;
+    object-position: top center;
+}
+
+@media screen and (max-width: 479px) {
+   .headerImg {
+      height: 200px;
+   }
+}

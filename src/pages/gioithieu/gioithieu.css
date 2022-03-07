@@ -1,0 +1,39 @@
+.aboutus {
+  padding: 0px 1px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutusHeader {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutusHeaderImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutusContainer {
+  padding: 50px 200px;
+  background-color: #f8f8f8;
+}
+
+.aboutusContainer > p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 479px) {
+  .aboutusContainer {
+    padding: 30px 15px;
+    background-color: #ffffff;
+  }
+
+  .aboutusContainer > p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}

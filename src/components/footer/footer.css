@@ -1,0 +1,239 @@
+.footer {
+  /* padding: 0 100px; */
+  height: 250px;
+}
+
+.sponsor {
+  background: #fff;
+  height: 70%;
+  width: 100%;
+  /* position: absolute; */
+  left: 0px;
+  padding-top: 20px;
+}
+
+.footerSponsor {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  height: 60px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footerSponsorItem {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.footerSponsorItem:last-child {
+  margin-right: 0;
+}
+
+.footerSponsorItem > img {
+  max-height: 70px;
+  max-width: 130px;
+}
+
+.sponsorSecondary {
+  text-align: center;
+  max-width: 1000px;
+  margin: 10px auto 0;
+  height: 225px;
+}
+
+.footerSponsorSecondaryItem {
+  display: inline-block;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-bottom: 20px;
+}
+
+.footerSponsorSecondaryItem > img {
+  max-height: 30px;
+  max-width: 75px;
+  position: relative;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+.footerSocialLinks {
+  background-image: url("../../../public/image/footer.jpg");
+  text-align: center;
+  height: 170px;
+}
+
+.socialIcons {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.socialMediaLink {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 30px;
+}
+
+.socialMediaLink > li {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.socialMediaLink > li > a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.socialMediaLink > li:hover {
+  background: #7bd2f0;
+}
+
+.socialMediaLinkIcon {
+  font-size: 25px;
+  color: #000;
+}
+
+.socialButton {
+  display: flex;
+  width: 230px;
+  margin-left: 20px;
+  padding-top: 30px;
+}
+
+.socialButtonLeft,
+.socialButtonRight {
+  background: none !;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  height: 48px;
+  margin: 0 auto;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 14px;
+}
+
+.socialButtonRight {
+  background: #ffffff !important;
+  border: 1px solid rgba(199, 1, 1, 0.15) !important;
+}
+
+.socialButtonLeft:hover {
+  background: #7bd2f0 !important;
+}
+
+.socialButtonRight:hover {
+  background: #7bd2f0 !important;
+}
+
+.socialIconsLogo {
+  position: absolute;
+  top: -60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialIconsLogo > img {
+  height: 120px;
+}
+
+.socialIconsName {
+  margin-top: 25px;
+  font-size: 25px;
+  color: #fff;
+}
+
+@media screen and (max-width: 479px) {
+  .footer {
+    height: 150px;
+  }
+
+  .sponsor {
+    height: 90px;
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerSponsor {
+    height: 50px;
+    flex-wrap: nowrap;
+  }
+
+  .footerSponsorItem {
+    margin-right: 10px;
+  }
+
+  .footerSponsorItem > img {
+    height: 30px;
+  }
+
+  .footerSocialLinks {
+    background-size: cover;
+    height: 100px;
+  }
+
+  .socialMediaLink {
+    padding-top: 35px;
+  }
+
+  .socialMediaLink > li {
+    width: 35px;
+    height: 35px;
+  }
+
+  .socialMediaLinkIcon {
+    font-size: 15px;
+  }
+
+  .socialIconsLogo {
+    position: absolute;
+    top: -34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socialIconsLogo > img {
+    height: 70px;
+  }
+
+  .socialButton {
+    width: 170px;
+    padding-top: 35px;
+    margin-left: 5px;
+  }
+
+  .socialButtonLeft,
+  .socialButtonRight {
+    height: 35px;
+    border-radius: 100px;
+    margin-left: 10px;
+    width: 80px;
+    font-size: 10px;
+  }
+}

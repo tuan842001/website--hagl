@@ -1,0 +1,193 @@
+.login {
+   height: 100%;
+   width: 100%;
+   background-color: #f8f8f8;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.loginHeader {
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   padding: 30px;
+   margin-right: 100px;
+   cursor: pointer;
+}
+
+.loginHeaderIcon {
+   font-size: 40px;
+}
+
+.loginContainer {
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 100px;
+}
+
+.loginTop,
+.loginTitle,
+.loginBottom {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.loginTitle>h2 {
+   font-size: 40px;
+   margin: 0;
+   padding-bottom: 15px;
+}
+
+.loginTitle>span {
+   display: flex;
+}
+
+.loginTitle>span>.link {
+   margin-left: 5px;
+}
+
+.loginTitle>span>.link:hover {
+   text-decoration: underline;
+   color: #02a037;
+}
+
+.loginBottom>span {
+   text-align: center;
+   border-bottom: 1px solid #000;
+   width: 450px;
+}
+
+.loginProviders {
+   display: flex;
+   flex-direction: column;
+   margin-top: 25px;
+}
+
+.loginProviders>span {
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   height: 40px;
+   width: 290px;
+   background-color: #3b5998;
+   font-size: 14px;
+   border-radius: 5px;
+   margin-bottom: 15px;
+   color: #fff;
+}
+
+.loginProvidersGoogle {
+   background-color: #4285f4 !important;
+}
+
+.loginProvidersIcon {
+   font-size: 20px;
+   padding: 8px;
+   background-color: #fff;
+   color: #3b5998;
+   margin-right: 15px;
+   margin-left: 1px;
+   border-radius: 2px;
+}
+
+.loginBottomForm {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.loginBottomForm>div {
+   display: flex;
+   flex-direction: column;
+   width: 450px;
+   margin-top: 20px;
+}
+
+.loginBottomForm>div>input {
+   height: 50px;
+   border-radius: 10px;
+   border: 1px solid #02a037;
+   padding-left: 15px;
+   margin-top: 10px;
+}
+
+.button {
+   display: flex;
+   flex-direction: column;
+   margin-top: 20px;
+   text-align: center;
+   width: 400px !important;
+   height: 50px;
+   border-radius: 50px;
+   background-color: #02a037;
+   color: #fff;
+   justify-content: center;
+   cursor: pointer;
+}
+
+.loginControl {
+   flex-direction: row !important;
+   justify-content: center !important;
+   align-content: space-around;
+}
+
+.loginControl>span {
+   display: flex;
+   align-items: center;
+   padding: 5px;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 479px) {
+   .loginHeader {
+   margin-right: 50px;
+}
+
+   .loginHeaderIcon {
+      font-size: 30px;
+   }
+
+   .loginTitle>h2 {
+      font-size: 25px;
+      padding-bottom: 10px;
+   }
+
+   .loginTitle>span,.loginTitle>span>.link {
+      font-size: 12px;
+   }
+
+   .loginProviders>span {   
+      height: 35px;
+      width: 250px;
+      font-size: 12px;
+   }
+
+   .loginProvidersIcon {
+      font-size: 18px;
+      padding: 5px;
+      margin-right: 10px;
+      margin-left: 3px;
+   }
+
+   .loginBottomForm>div {
+      width: 300px;
+      margin-top: 20px;
+   }
+
+   .loginBottomForm>div>input {
+      height: 40px;
+      margin-top: 5px;
+   }
+
+   .loginBottomForm>.button {
+      margin-top: 30px;
+      width: 200px !important;
+      height: 45px;
+
+   }
+
+}

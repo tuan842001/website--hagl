@@ -1,0 +1,236 @@
+.topbar {
+   width: 100%;
+   height: 75px;
+   background-color: #fff;
+   box-shadow: 0 1px 4px 0 rgb(0 0 0 / 40%);
+   position: sticky;
+   top: 0;
+   display: flex;
+   align-items: center;
+   z-index: 999;
+   float: left;
+}
+
+.topLeft {
+   flex: 8;
+   display: flex;
+   align-items: center;
+   margin-left: 120px;
+}
+
+.topLogo {
+   height: 60px;
+   cursor: pointer;
+   margin-right: 35px;
+}
+
+.topBars{
+   display: none;
+}
+
+.topListMobile{
+   left: 0 !important;
+   position: absolute !important;
+   top: 8px !important;
+   width: 414px !important;
+   height: 580px;
+   border: none;
+}
+
+.btn{
+   padding: 16px;
+}
+
+.btn>.iconBars{
+   font-size: 25px;
+   display: block;
+}
+
+.btn>span{
+   display: none;
+}
+
+.show>span{
+   display: flex;
+    height: 39px;
+    font-size: 24px;
+    position: absolute !important;
+    width: 333px !important;
+    top: -3px;
+    float: left;
+    align-items: center;
+    background: #fff;
+}
+
+.show>.iconBars{
+   font-size: 25px;
+   display: none;
+}
+
+/* .show{
+   position: absolute !important;
+    width: 500px !important;
+    top: -29px;
+    background: #fff;
+} */
+
+.btn:focus,
+.show:focus{
+   box-shadow: none !important;
+}
+.topListMobile .link{
+   display: flex;
+   width: 100%;
+   height: 50px;
+   justify-content: space-between;
+   align-items: center;
+   border: none;
+}
+
+.topListItemMobile{
+   display: flex;
+   width: 100%;
+   height: 50px;
+   font-size: 15px;
+   border-bottom: 1px solid #e5e5e5;
+   padding: 0 15px;
+}
+
+.topListItemMobile:first-child{
+   border-top: 1px solid #e5e5e5;
+}
+
+.topList {
+   display: flex;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   height: 75px;
+   line-height: 75px;
+   align-items: center;
+}
+
+.topListItem {
+   margin-right: 20px;
+   font-size: 18px;
+   font-weight: 500;
+   cursor: pointer;
+   color: #585858;
+}
+
+.active,
+.topListItem:hover {
+   display: flex;
+   height: 75px;
+   line-height: 75px;
+   border-bottom: 4px solid #02a037;
+   color: #02a037;
+}
+
+.topRight {
+   flex: 4;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.topSearch {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.topRightForm {
+   border: 0;
+   font-size: 100%;
+   display: flex;
+   border: 1px solid #02a037;
+   border-radius: 10px;
+   margin-right: 25px;
+}
+
+.topRightInput {
+   width: 100%;
+   height: 37px;
+   padding-right: 32px;
+   border: none;
+   background: transparent;
+   padding: 0 15px;
+}
+
+input:focus {
+   outline: 0;
+}
+
+.topRightButton {
+   width: 50px;
+   display: flex;
+   justify-content: center;
+   color: #02a037;
+   font-size: 18px;
+   align-items: center;
+   background: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+   .topbar {
+      height: 60px;
+   }
+
+   .topLeft {
+      margin-left: 10px;
+      flex: 1;
+   }
+
+   .topLogo {
+      height: 45px;
+      margin-right: 0;
+   }
+
+   .topBars{
+      display: flex;
+      flex: 1;      
+      margin-right: 15px;
+      cursor: pointer;
+      color: #02a037;
+    }
+
+   
+
+   .topRight{
+      justify-content: flex-end;
+      margin-right: 10px;
+   }
+
+    .topList{
+        display: none;
+    }
+
+    .topRight>.topList{
+        display: flex;
+    }
+
+    .topRightInput {
+        height: 30px;
+        padding-right: 0;
+        width: 70px;
+    }
+
+    .active>span {
+      display: flex;
+    height: 50px;
+    position: relative;
+    top: -15px;
+    border: none;
+    color: #02a037 !important;
+    border-bottom: 1px solid #02a037;
+   }
+
+}

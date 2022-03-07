@@ -1,0 +1,279 @@
+.schedules {
+  background: #fff;
+}
+
+.schedulesTitle {
+  padding: 50px 200px;
+  display: flex;
+  border-bottom: 1px solid rgba(204, 183, 183, 0.2);
+}
+
+.schedulesContainer {
+  padding: 0 200px;
+  display: flex;
+}
+
+.schedulesComponent {
+  display: flex;
+  flex-direction: column;
+  flex: 7;
+}
+
+.schedulesFixture {
+  float: left;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.schedulesTimeTitle {
+  width: 100%;
+  display: block;
+  height: 34px;
+  margin: 15px 0;
+  float: left;
+}
+
+.schedulesTimeTitle > h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 24px;
+  color: #231f20;
+}
+
+.fixtureTitle {
+  height: 44px;
+  background: #f5f5f5;
+  float: left;
+  padding: 13px 12px;
+  width: 100%;
+}
+
+.fixtureTitle > span {
+  padding: 0 4px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.fixtureDetails,
+.show {
+  float: left;
+  width: 100%;
+  padding: 16px;
+  position: relative;
+  box-shadow: inset 0 -1px 0 0 rgb(0 0 0 / 10%);
+}
+
+.fixtureDetails > ul,
+.show > ul {
+  position: relative;
+  display: flex;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.firstTeam {
+  text-align: right;
+  width: calc(50% - 30px - 10px);
+}
+
+.firstTeam > img {
+  float: right;
+  margin-left: 14px;
+  height: 26px;
+  width: 26px;
+}
+
+.secondTeam {
+  text-align: left;
+  float: right;
+  padding-right: 18px;
+  width: calc(50% - 30px - 10px);
+}
+
+.secondTeam > img {
+  margin-right: 14px;
+  float: left;
+  height: 26px;
+  width: 26px;
+}
+
+.fixtureScore {
+  width: 50px;
+  height: 100%;
+  margin: 0 10px;
+  text-align: center;
+  background: #707070;
+  border-radius: 4px;
+}
+
+.fixtureScore > span {
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.fixtureDetails > p {
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.14;
+  margin: 16px 0 0;
+  display: none;
+  margin-right: auto;
+  float: left;
+}
+.show > p {
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.14;
+  margin: 16px 0 0;
+  display: auto;
+  margin-right: auto;
+  float: left;
+}
+
+.fixtureAccord {
+  position: absolute;
+  right: 4px;
+  top: 8px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.fixtureAccord > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.fixtureAccord > span:hover {
+  background: #f1f1f1;
+}
+
+.schedulesSiderbar {
+  flex: 3;
+  width: 100%;
+  height: 100%;
+  margin-left: 25px;
+}
+
+.schedulesRow {
+  float: left;
+  width: 100%;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+.schedulesSiderbarTop {
+  position: relative;
+  text-align: center;
+  min-height: 20px;
+  margin-top: 39px;
+  margin-bottom: 16px;
+}
+
+.schedulesSiderbarTop > img {
+  height: 50px;
+}
+
+.schedulesSiderbarBottom {
+  width: 100%;
+  text-align: center;
+}
+
+.schedulesSiderbarBottom > span {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.schedulesSiderbarBottom > span > h2 {
+  padding-left: 15px;
+  font-size: 17px;
+  margin-bottom: 6px;
+  color: #1a1a1a;
+}
+
+.schedulesSiderbarBottomTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+}
+
+.tableHead {
+  background-color: #f2f2f2;
+  height: 34px;
+  color: #1a1a1a;
+  width: 100%;
+  display: table-row;
+  table-layout: fixed;
+  margin-bottom: 9px;
+}
+
+.tableHead > th {
+  height: 30px;
+  font-weight: 400;
+}
+
+.tableName {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.tableRow {
+  height: auto !important;
+  line-height: 2.1;
+  padding: 0;
+  border-bottom: 1px solid rgba(204, 183, 183, 0.2);
+}
+
+.tableRow:last-child {
+  border: none;
+}
+
+.tableRow > td {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.schedulesSiderbarButton {
+  margin: 20px 0;
+}
+
+.schedulesSiderbarButton > a {
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 1px solid rgba(73, 74, 80, 0.2);
+}
+
+.schedulesSiderbarButton > a > span {
+  color: #1a1a1a;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 50px;
+  padding: 0 32px;
+  text-align: center;
+}
