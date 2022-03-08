@@ -13,7 +13,7 @@ export default function News() {
         </h2>
         <Link to="/tin-tuc" className="link">
           XEM THÊM TIN TỨC
-          <BsArrowRight style={{ marginLeft: "10px" }} color="#02a037" />
+          <BsArrowRight style={{ marginLeft: "5px" }} color="#02a037" />
         </Link>
       </div>
       <div className="newsContent">

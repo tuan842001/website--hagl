@@ -4,7 +4,7 @@
   background-color: #f2f2f2;
 }
 
-.videoHader {
+.videoHeader {
   width: 95%;
   padding: 15px 30px;
   display: flex;
@@ -12,7 +12,7 @@
   align-items: flex-end;
 }
 
-.videoHaderTitle {
+.videoHeaderTitle {
   text-transform: uppercase;
   font-size: 27px;
   font-weight: 500;
@@ -21,12 +21,17 @@
   color: #02a037;
 }
 
-.videoHaderTitle > span {
+.videoHeaderTitle > span {
   color: #000;
 }
 
-.videoHader > a:hover {
+.videoHeader > a:hover {
   color: #02a037;
+}
+
+.videoHeader > a {
+  display: flex;
+  align-items: center;
 }
 
 .videoContent {
@@ -76,7 +81,7 @@
   border-radius: 8px;
 }
 
-.videoFigure > img {
+.videoImg {
   transition: opacity 0.2s ease-out,
     transform 3.8s cubic-bezier(0.19, 1, 0.22, 1);
   background-size: cover;
@@ -90,10 +95,24 @@
   transform: scale(1.025) rotate(0.02deg);
 }
 
+.videoGradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0.9) 80%
+  );
+  height: 70%;
+  border-radius: 0 0 8px 8px;
+}
+
 .videoInfo {
   display: flex;
   flex-direction: column;
-  align-items: left;
   position: absolute;
   top: 90px;
   width: 100%;
@@ -130,15 +149,7 @@
   height: 428px;
 }
 
-.leftFigure {
-  width: 100%;
-  height: 428px;
-}
-
-.leftFigure > img {
-  height: 428px;
-}
-
+.leftFigure,
 .leftImg {
   width: 100%;
   height: 428px;
@@ -162,22 +173,68 @@
   width: 60px;
 }
 
+@media screen and (max-width: 1440px) {
+  .video {
+    padding: 0 50px;
+    padding-top: 20px;
+  }
+
+  .videoHeader {
+    width: 100%;
+  }
+
+  .videoPost,
+  .videoFigure,
+  .videoImg {
+    width: 284px;
+  }
+
+  .leftPost {
+    width: 95%;
+    height: 428px;
+  }
+
+  .leftFigure,
+  .leftImg {
+    width: 100%;
+    height: 428px;
+  }
+
+  .leftInfo {
+    top: 280px;
+    width: 100%;
+  }
+
+  .leftTitle {
+    padding: 0px 30px;
+    font-size: 27px;
+  }
+
+  .leftPlay {
+    font-size: 25px !important;
+    padding: 20px;
+    margin-left: 30px;
+    height: 60px;
+    width: 60px;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .video {
     padding: 0 5px;
     padding-top: 20px;
   }
 
-  .videoHader {
+  .videoHeader {
     width: 95%;
     padding: 5px 15px;
   }
 
-  .videoHaderTitle {
+  .videoHeaderTitle {
     font-size: 17px;
   }
 
-  .videoHader > a {
+  .videoHeader > a {
     font-size: 12px;
   }
 
@@ -202,21 +259,21 @@
     flex-direction: row;
   }
 
-  .videoFigure {
+  .videoFigure,
+  .videoImg {
     width: 140px;
     height: 130px;
     border-radius: 8px 0 0 8px;
   }
 
-  .videoFigure > img {
-    width: 140px;
-    height: 130px;
+  .videoGradient {
+    display: none;
+    border-radius: 0 0 8px 8px;
   }
 
   .videoInfo {
-    width: 60%;
+    width: 230px;
     flex-direction: column;
-    align-items: left;
     position: relative;
     top: 0;
   }
@@ -237,15 +294,11 @@
     height: 280px;
   }
 
-  .leftFigure {
+  .leftFigure,
+  .leftFigure > img {
     width: 100%;
     height: 280px;
     border-radius: 8px;
-  }
-
-  .leftFigure > img {
-    width: 380px;
-    height: 280px;
   }
 
   .leftImg {

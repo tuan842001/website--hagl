@@ -51,7 +51,7 @@
   border-radius: 8px;
 }
 
-.playerFigure > img {
+.playerImg {
   transition: opacity 0.2s ease-out,
     transform 3.8s cubic-bezier(0.19, 1, 0.22, 1);
   background-size: cover;
@@ -123,6 +123,26 @@
   border-radius: 8px;
 }
 
+@media screen and (max-width: 1440px) {
+  .player {
+    padding: 0 50px;
+    padding-top: 20px;
+  }
+
+  .playerContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    justify-content: space-evenly;
+  }
+
+  .playerPost,
+  .playerFigure,
+  .playerImg {
+    width: 280px;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .player {
     padding: 0 5px;
@@ -147,7 +167,7 @@
     height: 185px;
   }
 
-  .playerFigure > img {
+  .playerImg {
     width: 185px;
     height: 185px;
   }

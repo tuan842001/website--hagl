@@ -8,13 +8,13 @@ import "./video.css";
 export default function Video() {
   return (
     <div className="video">
-      <div className="videoHader">
-        <h2 className="videoHaderTitle">
+      <div className="videoHeader">
+        <h2 className="videoHeaderTitle">
           Videos <span>mới nhất</span>
         </h2>
         <Link to="video" className="link">
           XEM THÊM VIDEOS
-          <BsArrowRight style={{ marginLeft: "10px" }} color="#02a037" />
+          <BsArrowRight style={{ marginLeft: "5px" }} color="#02a037" />
         </Link>
       </div>
       <div className="videoContent">
@@ -27,6 +27,7 @@ export default function Video() {
                   src="../../../image/273378933_479435000513886_5952631095965955863_n.jpg"
                   alt=""
                 />
+                <div className="videoGradient"></div>
               </figure>
               <div className="videoInfo leftInfo">
                 <FaPlay className="play leftPlay" />
@@ -43,6 +44,7 @@ export default function Video() {
               <Link className="links" to="video">
                 <figure className="videoFigure">
                   <img className="videoImg" src={item.img} alt="" />
+                  <div className="videoGradient"></div>
                 </figure>
                 <div className="videoInfo">
                   <FaPlay className="play" />

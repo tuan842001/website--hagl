@@ -7,35 +7,37 @@ import "./videoPage.css";
 function VideoItemLg(props) {
   return (
     <div className="videoContentLeft videoContentLeftPage">
-      <div className="videoPost leftPost leftPostPage">
+      <div className="videoPost leftPost videoPostPage leftPostPage">
         <Link className="links" to="/video">
-          <figure className="videoFigure leftFigure">
+          <figure className="videoFigure leftFigure videoFigurePage leftFigurePage">
             <img
-              className="videoImg leftImg"
+              className="videoImg leftImg videoImgPage"
               src="../../../image/273378933_479435000513886_5952631095965955863_n.jpg"
               alt=""
             />
+            <div className="videoGradient videoGradientPage"></div>
           </figure>
-          <div className="videoInfo leftInfo">
-            <FaPlay className="play leftPlay" />
-            <span className="videoTitle leftTitle">
+          <div className="videoInfo leftInfo videoInfoPage">
+            <FaPlay className="play leftPlay playPage" />
+            <span className="videoTitle leftTitle videoTitlePage">
               Martial shines on Sevilla home debut
             </span>
           </div>
         </Link>
       </div>
-      <div className="videoPost leftPost">
+      <div className="videoPost leftPost videoPostPage leftPostPage">
         <Link className="links" to="/video">
-          <figure className="videoFigure leftFigure">
+          <figure className="videoFigure leftFigure videoFigurePage leftFigurePage">
             <img
-              className="videoImg leftImg"
+              className="videoImg leftImg videoImgPage"
               src="../../../image/273378933_479435000513886_5952631095965955863_n.jpg"
               alt=""
             />
+            <div className="videoGradient videoGradientPage"></div>
           </figure>
-          <div className="videoInfo leftInfo">
-            <FaPlay className="play leftPlay" />
-            <span className="videoTitle leftTitle">
+          <div className="videoInfo leftInfo videoInfoPage">
+            <FaPlay className="play leftPlay playPage" />
+            <span className="videoTitle leftTitle videoTitlePage">
               Martial shines on Sevilla home debut
             </span>
           </div>
@@ -49,14 +51,15 @@ function VideoItem(props) {
   return (
     <div className="videoContentRight videoContentRightPage">
       {videosData.map((item) => (
-        <div className="videoPost" key={Math.random()}>
+        <div className="videoPost videoPostPage" key={Math.random()}>
           <Link className="links" to="/video">
-            <figure className="videoFigure">
-              <img className="videoImg" src={item.img} alt="" />
+            <figure className="videoFigure videoFigurePage">
+              <img className="videoImg videoImgPage" src={item.img} alt="" />
+              <div className="videoGradient videoGradientPage"></div>
             </figure>
-            <div className="videoInfo">
-              <FaPlay className="play" />
-              <span className="videoTitle">{item.title}</span>
+            <div className="videoInfo videoInfoPage">
+              <FaPlay className="play playPage" />
+              <span className="videoTitle videoTitlePage">{item.title}</span>
             </div>
           </Link>
         </div>

@@ -277,3 +277,28 @@
   padding: 0 32px;
   text-align: center;
 }
+
+@media screen and (max-width: 479px) {
+  .schedulesTitle {
+    padding: 20px;
+  }
+
+  .schedulesContainer {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .schedulesFixture {
+    margin-bottom: 15px;
+  }
+
+  .fixtureDetails,
+  .show {
+    padding: 15px 0;
+  }
+
+  .schedulesSiderbar {
+    margin-left: 0;
+  }
+}

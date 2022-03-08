@@ -17,7 +17,7 @@ export default function Contact() {
         <ul className="contactList">
           <li className="contactListItem">
             <FaMapMarkerAlt className="contactListItemIcon" />
-            <span>15 Trường Chinh, Pleiku</span>
+            15 Trường Chinh, Pleiku
           </li>
           <li className="contactListItem">
             <FaPhone className="contactListItemIcon" />
@@ -40,7 +40,7 @@ export default function Contact() {
               </span>
             </div>
             <div className="contactBottomLeftForm">
-              <label className="contactLabel">Mail</label>
+              <label className="contactLabel">Email</label>
               <span>
                 <FaEnvelope className="contactBottomLeftIcon" />
                 <input type="email" />
@@ -56,12 +56,7 @@ export default function Contact() {
           </div>
           <div className="contactBottomRight">
             <label className="contactLabel">Nội dung</label>
-            <textarea
-              name=""
-              cols="30"
-              rows="10"
-              placeholder="Nội dung"
-            ></textarea>
+            <textarea placeholder="Nội dung"></textarea>
           </div>
           <button type="submit" className="contactBottomButton">
             Liên hệ

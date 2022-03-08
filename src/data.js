@@ -67,7 +67,7 @@ export const machesData = [
     date: "Chủ Nhật, 06/03/2022",
     time: "19:30, Vinh",
     home: "../image/slna.png",
-    homeName: "SÔNG LAM NGHỆ AN",
+    homeName: "Sông lam nghệ an",
     score: "-:-",
     away: "../image/hagl.png",
     awayName: "Hoàng Anh Gia Lai",
@@ -125,7 +125,7 @@ export const machesData = [
 ];
 
 export const month3Data = [
-{
+  {
     date: "Thứ 4, 02/03/2022",
     home: "../image/hagl.png",
     homeName: "Hoàng Anh Gia Lai",
@@ -136,8 +136,8 @@ export const month3Data = [
   {
     date: "Chủ Nhật, 06/03/2022",
     home: "../image/slna.png",
-    homeName: "SÔNG LAM NGHỆ AN",
-    score: "17:00",
+    homeName: "Sông lam nghệ an",
+    score: "2-0",
     away: "../image/hagl.png",
     awayName: "Hoàng Anh Gia Lai",
   },
@@ -149,7 +149,6 @@ export const month3Data = [
     away: "../image/viettel.png",
     awayName: "Viettel",
   },
-  
 ];
 export const month4Data = [
   {
@@ -160,7 +159,7 @@ export const month4Data = [
     away: "../image/",
     awayName: "Chưa xác định",
   },
-  { 
+  {
     date: "Thứ bảy, 16/04/2022",
     home: "../image/hagl.png",
     homeName: "Hoàng Anh Gia Lai",
@@ -184,5 +183,4 @@ export const month4Data = [
     away: "../image/hagl.png",
     awayName: "Hoàng Anh Gia Lai",
   },
-  
 ];

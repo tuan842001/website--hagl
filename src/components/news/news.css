@@ -27,6 +27,11 @@
   color: #000;
 }
 
+.newsHeader > a {
+  display: flex;
+  align-items: center;
+}
+
 .newsHeader > a:hover {
   color: #02a037 !important;
 }
@@ -105,6 +110,30 @@
   overflow: hidden;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 1440px) {
+  .news {
+    padding: 0 50px;
+    padding-top: 20px;
+  }
+
+  .newsContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    justify-content: space-evenly;
+  }
+
+  .newsPost,
+  .newsFigure,
+  .newsImg {
+    width: 284px;
+  }
+
+  .newsHeader {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 479px) {

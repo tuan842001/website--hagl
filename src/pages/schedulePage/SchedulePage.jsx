@@ -3,6 +3,29 @@ import { BsChevronDown } from "react-icons/bs";
 import { month3Data, month4Data } from "../../data";
 import "./schedulePage.css";
 
+function createData(order, name, fought, win, protein) {
+  return {
+    order,
+    name,
+    fought,
+    win,
+    protein,
+  };
+}
+
+const rows = [
+  createData(1, "Hải Phòng", 3, 2, 7),
+  createData(2, "Viettel", 3, 2, 6),
+  createData(3, "Sông Lam Nghệ An", 3, 2, 6),
+  createData(4, "Bình Dương", 3, 1, 4),
+  createData(5, "Đà Nẵng", 3, 0, 3),
+  createData(6, "Bình Định", 2, 1, 3),
+  createData(7, "TP Hồ Chí Minh", 2, 0, 2),
+  createData(8, "Hồng Lĩnh Hà Tĩnh", 3, 0, 2),
+  createData(9, "Hoàng Anh Gia Lai", 3, 0, 2),
+  createData(10, "Nam Định", 2, 0, 1),
+];
+
 function ScheduleItem(props) {
   const [open, setOpen] = useState(true);
   return (
@@ -149,55 +172,15 @@ export default function SchedulePage() {
                     <th>Thắng</th>
                     <th>Điểm</th>
                   </tr>
-                  <tr className="tableRow">
-                    <td>1</td>
-                    <td className="tableName">Hải Phòng</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                  </tr>
-                  <tr className="tableRow">
-                    <td>1</td>
-                    <td className="tableName">Hải Phòng</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                  </tr>
-                  <tr className="tableRow">
-                    <td>1</td>
-                    <td className="tableName">Hải Phòng</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                  </tr>
-                  <tr className="tableRow">
-                    <td>1</td>
-                    <td className="tableName">Hải Phòng</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                  </tr>
-                  <tr className="tableRow">
-                    <td>1</td>
-                    <td className="tableName">Hải Phòng</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                  </tr>
-                  <tr className="tableRow">
-                    <td>1</td>
-                    <td className="tableName">Hải Phòng</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                  </tr>
-                  <tr className="tableRow">
-                    <td>1</td>
-                    <td className="tableName">Hải Phòng</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                  </tr>
+                  {rows.map((row) => (
+                    <tr className="tableRow" key={row.name}>
+                      <td>{row.order}</td>
+                      <td className="tableName">{row.name}</td>
+                      <td>{row.fought}</td>
+                      <td>{row.win}</td>
+                      <td>{row.protein}</td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
               <div className="schedulesSiderbarButton">

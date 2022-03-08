@@ -43,11 +43,11 @@ export default class Schedule extends Component {
     };
     return (
       <div className="schedule">
-        <div className="scheduleHader">
-          <h2 className="scheduleHaderTitle">Lịch thi đấu</h2>
+        <div className="scheduleHeader">
+          <h2 className="scheduleHeaderTitle">Lịch thi đấu</h2>
           <Link to="/lich-thi-dau" className="link">
             XEM THÊM LỊCH THI ĐẤU
-            <BsArrowRight style={{ marginLeft: "10px" }} color="#02a037" />
+            <BsArrowRight style={{ marginLeft: "5px" }} color="#02a037" />
           </Link>
         </div>
         <Slider {...settings}>
